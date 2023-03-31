@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body style="background-image: url(static/images/apply-bg.jpg);">
+    <div class="row justify-content-center mt-5">
+      <div class="col-5">
+        <div class="card mb-3" style="max-width: 1500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img style="margin-top: 5em; height: 270px; width: 280px; " src="static/images/fis.png" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h4 class="card-title mt-2 text-center">Register</h4>
+                <form action="" method="POST">
+                <div class="form-group">
+                    <label for="exampleInputUsername1">Username</label>
+                    <input type="text" name="username" class="form-control" id="exampleInputUsername1">
+                  </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" name="inpEmail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" name="inpPass" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputAddress1">Alamat</label>
+                    <textarea type="text" name="address" class="form-control" id="exampleInputAddress1"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputNoTelp1">Nomor Telp.</label>
+                    <input type="tel" class="form-control" name="noTelp" id="exampleInputNoTelp1" placeholder="(+62)xxxxxxxxxxx" required />
+                </div>
+                <button type="submit" class="btn btn-danger mt-3 ">Register</button>
+            </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
